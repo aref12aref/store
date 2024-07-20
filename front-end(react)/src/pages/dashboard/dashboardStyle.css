@@ -1,0 +1,156 @@
+/* dashboard style */
+.maindash {
+  display: flex;
+  width: 100%;
+}
+
+.tablediv {
+  width: 100%;
+  padding: 20px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  table-layout: fixed;
+}
+tr:nth-child(even) {
+  background: #f1f7f8;
+}
+
+th,
+td {
+  border: 1px solid black;
+  padding: 0.75rem;
+  text-align: center;
+}
+th {
+  background: #74afb9;
+  color: #fff;
+}
+td {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* dashboard top style */
+.dashboardnavbar {
+  margin: 0 0 20px 0;
+  padding: 0;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 1px 5px 10px 5px rgb(166, 166, 166);
+}
+
+.dashboardnavbar1 {
+  margin-top: 0;
+  margin-left: 20px;
+  width: 10%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+}
+
+.dashboardnavbar2 {
+  margin-top: 0;
+  margin-right: 30px;
+  width: 12%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* dashboard sidebar style */
+.sideContainer {
+  margin-top: 10px;
+  width: 20%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-right: solid 2px rgb(166, 166, 166);
+}
+.sidesection {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-left: 30px;
+  margin-bottom: 10px;
+}
+.fa-solid,
+.fa-brands {
+  color: #183153;
+  font-size: 25px;
+}
+.sideItem {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  width: 50%;
+  height: 35px;
+  font-size: 25px;
+  background-color: #183153;
+  transition: 0.5s;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+.sideItem:hover {
+  scale: 1.1;
+  width: 70%;
+}
+.active {
+  background-color: #183153;
+  width: 70%;
+}
+
+/* edit user style */
+.editContainer {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  height: 600px;
+  margin-top: 20px;
+  flex-direction: column;
+}
+
+.editformcontainer,
+.createformcontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 90%;
+  font-size: 20px;
+  width: 100%;
+  margin-left: 30px;
+}
+
+.inp {
+  width: 80%;
+  height: 5%;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.but {
+  width: 81%;
+  background-color: rgba(0, 42, 255, 0.648);
+  margin-top: 20px;
+  height: 7%;
+  cursor: pointer;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+.but:hover {
+  background-color: white;
+  color: rgba(0, 42, 255, 0.648);
+  border: 2px solid rgba(0, 42, 255, 0.648);
+}
